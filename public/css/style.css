@@ -6,3 +6,24 @@ body {
 a {
   color: #00B7FF;
 }
+
+.jumbotron {
+  margin: 13%;
+  margin-top: 15vh
+}
+
+.jumbotron h1 {
+  margin: 48px;
+}
+
+.row {
+  margin: 48px !important;
+}
+
+.row input[type=text] {
+  height: 47px;
+}
+
+#response a {
+  font-size: 18px;
+}

@@ -1,0 +1,17 @@
+extends layout
+block content
+
+  <div class="jumbotron">
+    <h1>Url Shortner</h1>
+    <div class="row">
+        <div class="col-lg-6">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button id='get-url-btn' class="btn btn-primary btn-lg" type="button">Go!</button>
+            </span>
+            <input id='url-input' type="text" class="form-control" placeholder="Url to short">
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+        <div id="response"></div>
+    </div><!-- /.row -->
+  </div>
