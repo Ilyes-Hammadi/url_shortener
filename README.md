@@ -13,7 +13,7 @@ $ bower install
 ```
 ## Run localy
 ```shell
-$ grunt
+$ grunt (or npm start)
 ```
 
 ## Deploy to heroku
