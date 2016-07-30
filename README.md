@@ -4,7 +4,7 @@ A simple Express app to short url
 ## Pre-Installation
 1. Create a [Heroku](http://heroku.com) and [mLab](https://mlab.com) account.
 2. Create a mongoDB database on mLab, check this [guide](https://github.com/FreeCodeCamp/FreeCodeCamp/wiki/Using-MongoDB-And-Deploying-To-Heroku) for more detail.
-3. Put your database informations on the ```config/config.js``` file.
+3. Put your database informations on the [config/config.js](https://github.com/Ilyes-Hammadi/url_shortener/blob/master/config/config.js) file.
 
 ## Installation
 ```shell
