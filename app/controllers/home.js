@@ -21,7 +21,7 @@ router.get('/', (req, res, next) => {
 });
 
 router.get('/new/', (req, res) => {
-  
+
   // Return error if url param is null
   if (!(/\S/.test(req.param('url')))) {
     res.json({
@@ -29,9 +29,11 @@ router.get('/new/', (req, res) => {
     });
     return;
   }
+  // The input url param
+  var urlParam = req.param('url');
 
   // Get the url that is passed in the params
-  var url = new Url({original_url: req.param('url')});
+  var url = new Url({original_url: urlParam});
 
   // Create the new url entry in the database
   url.save((err) => {
@@ -51,7 +53,7 @@ router.get('/:key', (req, res) => {
       res.render('error', {error: err})
     } else {
       console.log(url);
-      res.redirect(url.original_url);
+      res.redirect('http://' + url.original_url);
     }
   });
 });

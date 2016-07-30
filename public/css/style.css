@@ -1,6 +1,5 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -8,22 +7,48 @@ a {
 }
 
 .jumbotron {
-  margin: 13%;
-  margin-top: 15vh
+  margin-right: 13%;
+  margin-left: 13%;
+  /*margin-top: 15vh;*/
+  padding: 24px;
+}
+
+li {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 8px;
 }
 
 .jumbotron h1 {
-  margin: 48px;
 }
 
 .row {
-  margin: 48px !important;
+  /*margin: 32px !important;*/
 }
 
 .row input[type=text] {
   height: 47px;
 }
+#response {
+  margin-top: 4vh;
+}
 
 #response a {
   font-size: 18px;
+  background: white;
+  padding: 14px;
+  border: 1px #a7a7a7 solid;
+  margin: 14px;
+  border-radius: 8px;
+}
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+h3 {
+  margin-bottom: 4%;
 }

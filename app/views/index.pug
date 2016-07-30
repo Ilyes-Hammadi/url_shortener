@@ -3,6 +3,12 @@ block content
 
   <div class="jumbotron">
     <h1>Url Shortner</h1>
+
+    h3 Example usage:
+    ol
+      li <a href="">http://<span class="hostname"></span>/new/?url=http://google.com</a>
+      li The ouput will be this json <code>{"short_url": "<span class="hostname"></span>/579cc45d5c2a76a739952dc0","original_url": "http://google.com"}</code>
+    h3 Try it here !!
     <div class="row">
         <div class="col-lg-6">
           <div class="input-group">
@@ -12,6 +18,8 @@ block content
             <input id='url-input' type="text" class="form-control" placeholder="Url to short">
           </div><!-- /input-group -->
         </div><!-- /.col-lg-6 -->
-        <div id="response"></div>
     </div><!-- /.row -->
+    <div id="response" class="row"></div>
   </div>
+
+

@@ -2,6 +2,10 @@ var path = require('path'),
   rootPath = path.normalize(__dirname + '/..'),
   env = process.env.NODE_ENV || 'development';
 
+// TODO: put your database informations here
+var dbPath = 'mongodb://<dbUsername>:<dbPassword>@<dbDomainName>:<dbPort>/<dbName>';
+
+
 var config = {
   development: {
     root: rootPath,
@@ -9,7 +13,7 @@ var config = {
       name: 'url-shortener'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://ilyes:cosplay222@ds031895.mlab.com:31895/url-shortener'
+    db: dbPath
   },
 
   test: {
@@ -18,7 +22,7 @@ var config = {
       name: 'url-shortener'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://ilyes:cosplay222@ds031895.mlab.com:31895/url-shortener'
+    db: dbPath
   },
 
   production: {
@@ -27,7 +31,7 @@ var config = {
       name: 'url-shortener'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://ilyes:cosplay222@ds031895.mlab.com:31895/url-shortener'
+    db: dbPath
   }
 };
 
