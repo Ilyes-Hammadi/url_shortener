@@ -1,4 +1,4 @@
-# Request Handler
+# URL Shortener Microservice
 A simple Express app to short url
 
 ## Pre-Installation
