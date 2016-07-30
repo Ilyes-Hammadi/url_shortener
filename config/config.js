@@ -1,6 +1,6 @@
 var path = require('path'),
-    rootPath = path.normalize(__dirname + '/..'),
-    env = process.env.NODE_ENV || 'development';
+  rootPath = path.normalize(__dirname + '/..'),
+  env = process.env.NODE_ENV || 'development';
 
 var config = {
   development: {
@@ -9,7 +9,7 @@ var config = {
       name: 'url-shortener'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/url-shortener-development'
+    db: 'mongodb://ilyes:cosplay222@ds031895.mlab.com:31895/url-shortener'
   },
 
   test: {
@@ -18,7 +18,7 @@ var config = {
       name: 'url-shortener'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/url-shortener-test'
+    db: 'mongodb://ilyes:cosplay222@ds031895.mlab.com:31895/url-shortener'
   },
 
   production: {
@@ -27,7 +27,7 @@ var config = {
       name: 'url-shortener'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/url-shortener-production'
+    db: 'mongodb://ilyes:cosplay222@ds031895.mlab.com:31895/url-shortener'
   }
 };
 
