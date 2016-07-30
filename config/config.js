@@ -5,8 +5,6 @@ var path = require('path'),
 // TODO: put your database informations here
 var dbPath = 'mongodb://<dbUsername>:<dbPassword>@<dbDomainName>:<dbPort>/<dbName>';
 
-dbPath = 'mongodb://ilyes:cosplay222@ds031895.mlab.com:31895/url-shortener';
-
 var config = {
   development: {
     root: rootPath,
